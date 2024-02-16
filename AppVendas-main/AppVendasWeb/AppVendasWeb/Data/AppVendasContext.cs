@@ -14,6 +14,7 @@ namespace AppVendasWeb.Data
 
         public DbSet<NovaVenda> NovaVendas { get; set; }
         public DbSet<ItemDaVenda> ItensDaVenda { get; set; }
+        public object Categoria { get; internal set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
